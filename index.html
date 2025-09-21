@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberScan Pro - Website Intelligence Scanner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="matrix-bg"></div>
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <h1>CyberScan<span class="pro">Pro</span></h1>
+            </div>
+            <nav class="nav">
+                <a href="#scanner" class="nav-link">Scanner</a>
+                <a href="#results" class="nav-link">Results</a>
+                <a href="#about" class="nav-link">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="scanner" class="scanner-section">
+            <div class="container">
+                <div class="scanner-intro">
+                    <h2 class="glitch-text" data-text="WEBSITE INTELLIGENCE SCANNER">WEBSITE INTELLIGENCE SCANNER</h2>
+                    <p class="scanner-desc">Har qanday websitening to'liq ma'lumotlarini professional darajada tahlil qiling</p>
+                </div>
+
+                <div class="scanner-animation">
+                    <div class="radar">
+                        <div class="radar-sweep"></div>
+                        <div class="radar-dot"></div>
+                        <div class="radar-rings">
+                            <div class="ring"></div>
+                            <div class="ring"></div>
+                            <div class="ring"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scanner-form">
+                    <div class="input-group">
+                        <input type="url" id="urlInput" placeholder="Website URL ni kiriting (masalan: https://example.com)" required>
+                        <button type="button" id="scanBtn" class="scan-btn">
+                            <span class="btn-text">SCAN BOSHLASH</span>
+                            <span class="btn-loading">SCANNING...</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="terminal" id="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-controls">
+                            <span class="control close"></span>
+                            <span class="control minimize"></span>
+                            <span class="control maximize"></span>
+                        </div>
+                        <span class="terminal-title">CyberScan Terminal</span>
+                    </div>
+                    <div class="terminal-body" id="terminalBody">
+                        <div class="terminal-line">
+                            <span class="prompt">cyberscan@pro:~$</span>
+                            <span class="cursor">_</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="results" class="results-section">
+            <div class="container">
+                <h2 class="section-title">SCAN NATIJALARI</h2>
+                <div class="results-grid" id="resultsGrid">
+                    <!-- Results will be populated here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h3>WEBSITE TAHLIL QILINMOQDA...</h3>
+            <div class="loading-progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <p class="loading-text" id="loadingText">Ma'lumotlar yuklanmoqda...</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
